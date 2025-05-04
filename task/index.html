@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML template | IT career Switch</title>
+    <meta name="author" content="pelumi otegbola">
+    <meta name="description" content="HTML template for IT career Switch project.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="preloader"></div>
+    
+    <div class="container">
+        <h1>GeoNames API Integration</h1>
+        <p>This application demonstrates integration with selected GeoNames APIs.</p>
+        
+        <table id="apiTable">
+            <thead>
+                <tr>
+                    <th>API name</th>
+                    <th>API description</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. Find Nearby Place Name</td>
+                    <td>
+                        <p>Finds the nearest populated place for the given latitude/longitude.</p>
+                        <div class="form-group">
+                            <label for="lat1">Latitude:</label>
+                            <input type="text" id="lat1" placeholder="e.g. 47.3" value="47.3">
+                        </div>
+                        <div class="form-group">
+                            <label for="lng1">Longitude:</label>
+                            <input type="text" id="lng1" placeholder="e.g. 9.7" value="9.7">
+                        </div>
+                    </td>
+                    <td>
+                        <button class="submit-btn" id="findNearbyBtn">Submit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2. Country Info</td>
+                    <td>
+                        <p>Returns information about a country.</p>
+                        <div class="form-group">
+                            <label for="country">Country Code:</label>
+                            <input type="text" id="country" placeholder="e.g. US" value="US">
+                        </div>
+                        <div class="form-group">
+                            <label for="lang">Language:</label>
+                            <input type="text" id="lang" placeholder="e.g. en" value="en">
+                        </div>
+                    </td>
+                    <td>
+                        <button class="submit-btn" id="countryInfoBtn">Submit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3. Search</td>
+                    <td>
+                        <p>Searches for places by name pattern.</p>
+                        <div class="form-group">
+                            <label for="q">Query:</label>
+                            <input type="text" id="q" placeholder="e.g. London" value="London">
+                        </div>
+                        <div class="form-group">
+                            <label for="maxRows">Max Results:</label>
+                            <input type="number" id="maxRows" min="1" max="20" value="5">
+                        </div>
+                    </td>
+                    <td>
+                        <button class="submit-btn" id="searchBtn">Submit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div id="results">
+            <h2>RESULTS</h2>
+            <div id="resultsContent"></div>
+        </div>
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
