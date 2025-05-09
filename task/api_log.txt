@@ -1,0 +1,408 @@
+2025-05-04 10:24:22 - Request: Array
+(
+    [country] => US
+    [lang] => en
+    [apiType] => countryInfo
+)
+
+API Type: countryInfo
+URL: http://api.geonames.org/countryInfoJSON?formatted=true&lang=en&country=US&username=ppeliance&style=full
+Raw API Response: {"geonames": [{
+  "continent": "NA",
+  "capital": "Washington",
+  "languages": "en-US,es-US,haw,fr",
+  "geonameId": 6252001,
+  "south": 24.543938895,
+  "isoAlpha3": "USA",
+  "north": 49.3844873,
+  "fipsCode": "US",
+  "population": "327167434",
+  "east": -66.949185723,
+  "isoNumeric": "840",
+  "areaInSqKm": "9629091.0",
+  "countryCode": "US",
+  "west": -124.73259849600001,
+  "countryName": "United States",
+  "postalCodeFormat": "#####-####",
+  "continentName": "North America",
+  "currencyCode": "...
+Final Output: {"status":{"code":200,"name":"ok","description":"success","returnedIn":"592 ms"},"data":[{"continent":"NA","capital":"Washington","languages":"en-US,es-US,haw,fr","geonameId":6252001,"south":24.543938895,"isoAlpha3":"USA","north":49.3844873,"fipsCode":"US","population":"327167434","east":-66.949185723,"isoNumeric":"840","areaInSqKm":"9629091.0","countryCode":"US","west":-124.73259849600001,"countryName":"United States","postalCodeFormat":"#####-####","continentName":"North America","currencyCode...
+
+2025-05-04 10:24:25 - Request: Array
+(
+    [lat] => 47.3
+    [lng] => 9.7
+    [apiType] => findNearbyPlaceName
+)
+
+API Type: findNearbyPlaceName
+URL: http://api.geonames.org/findNearbyPlaceNameJSON?formatted=true&lat=47.3&lng=9.7&username=ppeliance&style=full
+Raw API Response: {"geonames": [{
+  "distance": "1.34132",
+  "timezone": {
+    "gmtOffset": 1,
+    "timeZoneId": "Europe/Vienna",
+    "dstOffset": 2
+  },
+  "asciiName": "Dafins",
+  "astergdem": 787,
+  "countryId": "2782113",
+  "fcl": "P",
+  "srtm3": 796,
+  "adminId2": "2779673",
+  "adminId3": "2760391",
+  "countryCode": "AT",
+  "adminCodes1": {"ISO3166_2": "8"},
+  "adminId1": "2762300",
+  "lat": "47.29377",
+  "fcode": "PPL",
+  "continentCode": "EU",
+  "adminCode2": "804",
+  "adminCode3": "80424",
+  "adminCode1": ...
+Final Output: {"status":{"code":200,"name":"ok","description":"success","returnedIn":"88 ms"},"data":[{"distance":"1.34132","timezone":{"gmtOffset":1,"timeZoneId":"Europe\/Vienna","dstOffset":2},"asciiName":"Dafins","astergdem":787,"countryId":"2782113","fcl":"P","srtm3":796,"adminId2":"2779673","adminId3":"2760391","countryCode":"AT","adminCodes1":{"ISO3166_2":"8"},"adminId1":"2762300","lat":"47.29377","fcode":"PPL","continentCode":"EU","adminCode2":"804","adminCode3":"80424","adminCode1":"08","lng":"9.68481...
+
+2025-05-04 10:24:26 - Request: Array
+(
+    [q] => London
+    [maxRows] => 5
+    [apiType] => search
+)
+
+API Type: search
+URL: http://api.geonames.org/searchJSON?formatted=true&q=London&maxRows=5&username=ppeliance&style=full
+Raw API Response: {
+  "totalResultsCount": 10704,
+  "geonames": [
+    {
+      "timezone": {
+        "gmtOffset": 0,
+        "timeZoneId": "Europe/London",
+        "dstOffset": 1
+      },
+      "bbox": {
+        "east": 0.2811882683122086,
+        "south": 51.297523767519486,
+        "north": 51.68293389615384,
+        "west": -0.4991631942360928,
+        "accuracyLevel": 10
+      },
+      "asciiName": "London",
+      "astergdem": 33,
+      "countryId": "2635167",
+      "fcl": "P",
+      "srtm3": 25,
+      "score"...
+Final Output: {"status":{"code":200,"name":"ok","description":"success","returnedIn":"334 ms"},"data":[{"timezone":{"gmtOffset":0,"timeZoneId":"Europe\/London","dstOffset":1},"bbox":{"east":0.2811882683122086,"south":51.297523767519486,"north":51.68293389615384,"west":-0.4991631942360928,"accuracyLevel":10},"asciiName":"London","astergdem":33,"countryId":"2635167","fcl":"P","srtm3":25,"score":115.32997131347656,"adminId2":"2648110","countryCode":"GB","adminCodes1":{"ISO3166_2":"ENG"},"adminId1":"6269131","lat...
+
+2025-05-04 10:24:31 - Request: Array
+(
+    [country] => US
+    [lang] => en
+    [apiType] => countryInfo
+)
+
+API Type: countryInfo
+URL: http://api.geonames.org/countryInfoJSON?formatted=true&lang=en&country=US&username=ppeliance&style=full
+Raw API Response: {"geonames": [{
+  "continent": "NA",
+  "capital": "Washington",
+  "languages": "en-US,es-US,haw,fr",
+  "geonameId": 6252001,
+  "south": 24.543938895,
+  "isoAlpha3": "USA",
+  "north": 49.3844873,
+  "fipsCode": "US",
+  "population": "327167434",
+  "east": -66.949185723,
+  "isoNumeric": "840",
+  "areaInSqKm": "9629091.0",
+  "countryCode": "US",
+  "west": -124.73259849600001,
+  "countryName": "United States",
+  "postalCodeFormat": "#####-####",
+  "continentName": "North America",
+  "currencyCode": "...
+Final Output: {"status":{"code":200,"name":"ok","description":"success","returnedIn":"454 ms"},"data":[{"continent":"NA","capital":"Washington","languages":"en-US,es-US,haw,fr","geonameId":6252001,"south":24.543938895,"isoAlpha3":"USA","north":49.3844873,"fipsCode":"US","population":"327167434","east":-66.949185723,"isoNumeric":"840","areaInSqKm":"9629091.0","countryCode":"US","west":-124.73259849600001,"countryName":"United States","postalCodeFormat":"#####-####","continentName":"North America","currencyCode...
+
+2025-05-04 10:24:34 - Request: Array
+(
+    [lat] => 47.3
+    [lng] => 9.7
+    [apiType] => findNearbyPlaceName
+)
+
+API Type: findNearbyPlaceName
+URL: http://api.geonames.org/findNearbyPlaceNameJSON?formatted=true&lat=47.3&lng=9.7&username=ppeliance&style=full
+Raw API Response: {"geonames": [{
+  "distance": "1.34132",
+  "timezone": {
+    "gmtOffset": 1,
+    "timeZoneId": "Europe/Vienna",
+    "dstOffset": 2
+  },
+  "asciiName": "Dafins",
+  "astergdem": 787,
+  "countryId": "2782113",
+  "fcl": "P",
+  "srtm3": 796,
+  "adminId2": "2779673",
+  "adminId3": "2760391",
+  "countryCode": "AT",
+  "adminCodes1": {"ISO3166_2": "8"},
+  "adminId1": "2762300",
+  "lat": "47.29377",
+  "fcode": "PPL",
+  "continentCode": "EU",
+  "adminCode2": "804",
+  "adminCode3": "80424",
+  "adminCode1": ...
+Final Output: {"status":{"code":200,"name":"ok","description":"success","returnedIn":"228 ms"},"data":[{"distance":"1.34132","timezone":{"gmtOffset":1,"timeZoneId":"Europe\/Vienna","dstOffset":2},"asciiName":"Dafins","astergdem":787,"countryId":"2782113","fcl":"P","srtm3":796,"adminId2":"2779673","adminId3":"2760391","countryCode":"AT","adminCodes1":{"ISO3166_2":"8"},"adminId1":"2762300","lat":"47.29377","fcode":"PPL","continentCode":"EU","adminCode2":"804","adminCode3":"80424","adminCode1":"08","lng":"9.6848...
+
+2025-05-04 12:34:40 - Request: Array
+(
+    [lat] => 47.3
+    [lng] => 9.7
+    [apiType] => findNearbyPlaceName
+)
+
+API Type: findNearbyPlaceName
+URL: http://api.geonames.org/findNearbyPlaceNameJSON?formatted=true&lat=47.3&lng=9.7&username=ppeliance&style=full
+Raw API Response: {"geonames": [{
+  "distance": "1.34132",
+  "timezone": {
+    "gmtOffset": 1,
+    "timeZoneId": "Europe/Vienna",
+    "dstOffset": 2
+  },
+  "asciiName": "Dafins",
+  "astergdem": 787,
+  "countryId": "2782113",
+  "fcl": "P",
+  "srtm3": 796,
+  "adminId2": "2779673",
+  "adminId3": "2760391",
+  "countryCode": "AT",
+  "adminCodes1": {"ISO3166_2": "8"},
+  "adminId1": "2762300",
+  "lat": "47.29377",
+  "fcode": "PPL",
+  "continentCode": "EU",
+  "adminCode2": "804",
+  "adminCode3": "80424",
+  "adminCode1": ...
+Final Output: {"status":{"code":200,"name":"ok","description":"success","returnedIn":"698 ms"},"data":[{"distance":"1.34132","timezone":{"gmtOffset":1,"timeZoneId":"Europe\/Vienna","dstOffset":2},"asciiName":"Dafins","astergdem":787,"countryId":"2782113","fcl":"P","srtm3":796,"adminId2":"2779673","adminId3":"2760391","countryCode":"AT","adminCodes1":{"ISO3166_2":"8"},"adminId1":"2762300","lat":"47.29377","fcode":"PPL","continentCode":"EU","adminCode2":"804","adminCode3":"80424","adminCode1":"08","lng":"9.6848...
+
+2025-05-04 12:34:43 - Request: Array
+(
+    [q] => London
+    [maxRows] => 5
+    [apiType] => search
+)
+
+API Type: search
+URL: http://api.geonames.org/searchJSON?formatted=true&q=London&maxRows=5&username=ppeliance&style=full
+Raw API Response: {
+  "totalResultsCount": 10704,
+  "geonames": [
+    {
+      "timezone": {
+        "gmtOffset": 0,
+        "timeZoneId": "Europe/London",
+        "dstOffset": 1
+      },
+      "bbox": {
+        "east": 0.2811882683122086,
+        "south": 51.297523767519486,
+        "north": 51.68293389615384,
+        "west": -0.4991631942360928,
+        "accuracyLevel": 10
+      },
+      "asciiName": "London",
+      "astergdem": 33,
+      "countryId": "2635167",
+      "fcl": "P",
+      "srtm3": 25,
+      "score"...
+Final Output: {"status":{"code":200,"name":"ok","description":"success","returnedIn":"735 ms"},"data":[{"timezone":{"gmtOffset":0,"timeZoneId":"Europe\/London","dstOffset":1},"bbox":{"east":0.2811882683122086,"south":51.297523767519486,"north":51.68293389615384,"west":-0.4991631942360928,"accuracyLevel":10},"asciiName":"London","astergdem":33,"countryId":"2635167","fcl":"P","srtm3":25,"score":115.32997131347656,"adminId2":"2648110","countryCode":"GB","adminCodes1":{"ISO3166_2":"ENG"},"adminId1":"6269131","lat...
+
+2025-05-04 12:55:14 - Request: Array
+(
+    [lat] => 100
+    [lng] => 200
+    [apiType] => findNearbyPlaceName
+)
+
+API Type: findNearbyPlaceName
+URL: http://api.geonames.org/findNearbyPlaceNameJSON?formatted=true&lat=100&lng=200&username=ppeliance&style=full
+Raw API Response: {"status": {
+  "message": "invalid lat/lng",
+  "value": 14
+}}...
+API Error: invalid lat/lng
+2025-05-04 12:55:23 - Request: Array
+(
+    [lat] => 10
+    [lng] => 20
+    [apiType] => findNearbyPlaceName
+)
+
+API Type: findNearbyPlaceName
+URL: http://api.geonames.org/findNearbyPlaceNameJSON?formatted=true&lat=10&lng=20&username=ppeliance&style=full
+Raw API Response: {"geonames": [{
+  "distance": "17.93464",
+  "timezone": {
+    "gmtOffset": 1,
+    "timeZoneId": "Africa/Ndjamena",
+    "dstOffset": 1
+  },
+  "asciiName": "Bir Zaraf",
+  "astergdem": 398,
+  "countryId": "2434508",
+  "fcl": "P",
+  "srtm3": 401,
+  "countryCode": "TD",
+  "adminCodes1": {"ISO3166_2": "SA"},
+  "adminId1": "242048",
+  "lat": "10.08",
+  "fcode": "PPL",
+  "continentCode": "AF",
+  "adminCode1": "13",
+  "lng": "19.8577",
+  "geonameId": 6861514,
+  "toponymName": "Bir Zaraf",
+  "population":...
+Final Output: {"status":{"code":200,"name":"ok","description":"success","returnedIn":"682 ms"},"data":[{"distance":"17.93464","timezone":{"gmtOffset":1,"timeZoneId":"Africa\/Ndjamena","dstOffset":1},"asciiName":"Bir Zaraf","astergdem":398,"countryId":"2434508","fcl":"P","srtm3":401,"countryCode":"TD","adminCodes1":{"ISO3166_2":"SA"},"adminId1":"242048","lat":"10.08","fcode":"PPL","continentCode":"AF","adminCode1":"13","lng":"19.8577","geonameId":6861514,"toponymName":"Bir Zaraf","population":0,"adminName5":""...
+
+2025-05-04 12:58:11 - Request: Array
+(
+    [lat] => 10
+    [lng] => 20
+    [apiType] => findNearbyPlaceName
+)
+
+API Type: findNearbyPlaceName
+URL: http://api.geonames.org/findNearbyPlaceNameJSON?formatted=true&lat=10&lng=20&username=ppeliance&style=full
+Raw API Response: {"geonames": [{
+  "distance": "17.93464",
+  "timezone": {
+    "gmtOffset": 1,
+    "timeZoneId": "Africa/Ndjamena",
+    "dstOffset": 1
+  },
+  "asciiName": "Bir Zaraf",
+  "astergdem": 398,
+  "countryId": "2434508",
+  "fcl": "P",
+  "srtm3": 401,
+  "countryCode": "TD",
+  "adminCodes1": {"ISO3166_2": "SA"},
+  "adminId1": "242048",
+  "lat": "10.08",
+  "fcode": "PPL",
+  "continentCode": "AF",
+  "adminCode1": "13",
+  "lng": "19.8577",
+  "geonameId": 6861514,
+  "toponymName": "Bir Zaraf",
+  "population":...
+Final Output: {"status":{"code":200,"name":"ok","description":"success","returnedIn":"694 ms"},"data":[{"distance":"17.93464","timezone":{"gmtOffset":1,"timeZoneId":"Africa\/Ndjamena","dstOffset":1},"asciiName":"Bir Zaraf","astergdem":398,"countryId":"2434508","fcl":"P","srtm3":401,"countryCode":"TD","adminCodes1":{"ISO3166_2":"SA"},"adminId1":"242048","lat":"10.08","fcode":"PPL","continentCode":"AF","adminCode1":"13","lng":"19.8577","geonameId":6861514,"toponymName":"Bir Zaraf","population":0,"adminName5":""...
+
+2025-05-06 18:18:30 - Request: Array
+(
+    [lat] => 47.3
+    [lng] => 9.7
+    [apiType] => findNearbyPlaceName
+)
+
+API Type: findNearbyPlaceName
+URL: http://api.geonames.org/findNearbyPlaceNameJSON?formatted=true&lat=47.3&lng=9.7&username=ppeliance&style=full
+Raw API Response: {"geonames": [{
+  "distance": "1.34132",
+  "timezone": {
+    "gmtOffset": 1,
+    "timeZoneId": "Europe/Vienna",
+    "dstOffset": 2
+  },
+  "asciiName": "Dafins",
+  "astergdem": 787,
+  "countryId": "2782113",
+  "fcl": "P",
+  "srtm3": 796,
+  "adminId2": "2779673",
+  "adminId3": "2760391",
+  "countryCode": "AT",
+  "adminCodes1": {"ISO3166_2": "8"},
+  "adminId1": "2762300",
+  "lat": "47.29377",
+  "fcode": "PPL",
+  "continentCode": "EU",
+  "adminCode2": "804",
+  "adminCode3": "80424",
+  "adminCode1": ...
+Final Output: {"status":{"code":200,"name":"ok","description":"success","returnedIn":"217 ms"},"data":[{"distance":"1.34132","timezone":{"gmtOffset":1,"timeZoneId":"Europe\/Vienna","dstOffset":2},"asciiName":"Dafins","astergdem":787,"countryId":"2782113","fcl":"P","srtm3":796,"adminId2":"2779673","adminId3":"2760391","countryCode":"AT","adminCodes1":{"ISO3166_2":"8"},"adminId1":"2762300","lat":"47.29377","fcode":"PPL","continentCode":"EU","adminCode2":"804","adminCode3":"80424","adminCode1":"08","lng":"9.6848...
+
+2025-05-06 18:18:33 - Request: Array
+(
+    [lat] => 47.3
+    [lng] => 9.7
+    [apiType] => findNearbyPlaceName
+)
+
+API Type: findNearbyPlaceName
+URL: http://api.geonames.org/findNearbyPlaceNameJSON?formatted=true&lat=47.3&lng=9.7&username=ppeliance&style=full
+Raw API Response: {"geonames": [{
+  "distance": "1.34132",
+  "timezone": {
+    "gmtOffset": 1,
+    "timeZoneId": "Europe/Vienna",
+    "dstOffset": 2
+  },
+  "asciiName": "Dafins",
+  "astergdem": 787,
+  "countryId": "2782113",
+  "fcl": "P",
+  "srtm3": 796,
+  "adminId2": "2779673",
+  "adminId3": "2760391",
+  "countryCode": "AT",
+  "adminCodes1": {"ISO3166_2": "8"},
+  "adminId1": "2762300",
+  "lat": "47.29377",
+  "fcode": "PPL",
+  "continentCode": "EU",
+  "adminCode2": "804",
+  "adminCode3": "80424",
+  "adminCode1": ...
+Final Output: {"status":{"code":200,"name":"ok","description":"success","returnedIn":"182 ms"},"data":[{"distance":"1.34132","timezone":{"gmtOffset":1,"timeZoneId":"Europe\/Vienna","dstOffset":2},"asciiName":"Dafins","astergdem":787,"countryId":"2782113","fcl":"P","srtm3":796,"adminId2":"2779673","adminId3":"2760391","countryCode":"AT","adminCodes1":{"ISO3166_2":"8"},"adminId1":"2762300","lat":"47.29377","fcode":"PPL","continentCode":"EU","adminCode2":"804","adminCode3":"80424","adminCode1":"08","lng":"9.6848...
+
+2025-05-06 18:18:39 - Request: Array
+(
+    [country] => US
+    [lang] => en
+    [apiType] => countryInfo
+)
+
+API Type: countryInfo
+URL: http://api.geonames.org/countryInfoJSON?formatted=true&lang=en&country=US&username=ppeliance&style=full
+Raw API Response: {"geonames": [{
+  "continent": "NA",
+  "capital": "Washington",
+  "languages": "en-US,es-US,haw,fr",
+  "geonameId": 6252001,
+  "south": 24.543938895,
+  "isoAlpha3": "USA",
+  "north": 49.3844873,
+  "fipsCode": "US",
+  "population": "327167434",
+  "east": -66.949185723,
+  "isoNumeric": "840",
+  "areaInSqKm": "9629091.0",
+  "countryCode": "US",
+  "west": -124.73259849600001,
+  "countryName": "United States",
+  "postalCodeFormat": "#####-####",
+  "continentName": "North America",
+  "currencyCode": "...
+Final Output: {"status":{"code":200,"name":"ok","description":"success","returnedIn":"440 ms"},"data":[{"continent":"NA","capital":"Washington","languages":"en-US,es-US,haw,fr","geonameId":6252001,"south":24.543938895,"isoAlpha3":"USA","north":49.3844873,"fipsCode":"US","population":"327167434","east":-66.949185723,"isoNumeric":"840","areaInSqKm":"9629091.0","countryCode":"US","west":-124.73259849600001,"countryName":"United States","postalCodeFormat":"#####-####","continentName":"North America","currencyCode...
+
