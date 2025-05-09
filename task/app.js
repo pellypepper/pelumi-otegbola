@@ -1,6 +1,5 @@
-// Wait for page to fully load
 $(document).ready(function() {
-    // Remove preloader once page is loaded
+   
     if ($('#preloader').length) {
         $('#preloader').delay(1000).fadeOut('slow', function() {
             $(this).remove();
@@ -17,7 +16,7 @@ $(document).ready(function() {
 // Setup for event listeners
 function setupEventListeners() {
     
-    //  Nearby  Name API button
+    // Name API button
     $('#findNearbyBtn').on('click', function() {
         const lat = $('#lat1').val().trim();
         const lng = $('#lng1').val().trim();
@@ -101,13 +100,34 @@ function displayResults(response) {
     
     // Clear previous content
     resultsContent.empty();
-    
-    // Format JSON for display
-    const formattedJson = JSON.stringify(response, null, 4);
-    
-    // Create and append the pre element
-    const preElement = $('<pre></pre>').text(formattedJson);
-    resultsContent.append(preElement);
+
+    if (!response || !response.data || response.data.length === 0) {
+        resultsContent.html('<p>No results found.</p>');
+        return;
+    }
+
+    const limitedResults = response.data.slice(0, 4);
+
+    limitedResults.forEach((item, index) => {
+        const resultDiv = $('<div></div>').addClass('result-block');
+
+        const heading = $('<h3></h3>').text(`Result ${index + 1}`);
+        resultDiv.append(heading);
+
+        const list = $('<ul></ul>');
+
+        // Show only selected fields
+        const fieldsToShow = ['name', 'countryCode', 'population', 'lat', 'lng', 'capital', 'continent', 'countryName'];
+        fieldsToShow.forEach(key => {
+            if (item[key]) {
+                list.append(`<li><strong>${key}:</strong> ${item[key]}</li>`);
+            }
+        });
+
+        resultDiv.append(list);
+        resultsContent.append(resultDiv);
+    });
+
     
     // Scroll to results
     $('html, body').animate({
